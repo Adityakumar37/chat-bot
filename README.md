@@ -1,16 +1,60 @@
-# React + Vite
+# 🚀 Rocket AI Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Rocket AI** is a premium, multi-modal AI assistant built with **React** and **Vite**. It combines lightning-fast conversational logic with state-of-the-art image generation, all wrapped in a sleek, glassmorphic dark-mode interface.
 
-Currently, two official plugins are available:
+![Rocket AI Logo](/public/logo.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+- **🧠 Intelligent Chat**: Powered by the `Qwen/Qwen3-Coder-Next:novita` model via the HuggingFace Router for sub-second responses.
+- **🎨 Image Generation**: Uses `stabilityai/stable-diffusion-xl-base-1.0` to turn your imagination into high-quality visuals.
+- **📥 Instant Downloads**: Generate an image and download it instantly with a single click. Rocket handles the binary data seamlessly using Blob URLs.
+- **✨ Gemini-style UX**: A modern, floating input bar with auto-intent detection and a smooth conversation flow.
+- **🔥 Performance-First**: Optimized with **Framer Motion** for micro-animations and **Lucide React** for lightweight iconography.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📥 Image Downloads
 
-## Expanding the ESLint configuration
+When you generate an image, **Rocket AI** provides a high-quality preview in a glass container. 
+1. Hover/Click on the generated image.
+2. Click the **Download (📥)** button in the bottom-right corner.
+3. The image will be saved to your device immediately as a `.png` file.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Framework**: React 19 + Vite
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **API Clients**: 
+  - `@huggingface/inference` (Images)
+  - `openai` (Chat via HuggingFace Router)
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Adityakumar37/chat-bot.git
+cd chat-bot
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+Create a `.env` file in the root directory and add your HuggingFace token:
+```env
+VITE_HF_TOKEN=your_huggingface_token_here
+```
+
+### 4. Run the development server
+```bash
+npm run dev
+```
+
+## 🤝 Contributing
+Feel free to fork this project and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+Built with ❤️ by [Aditya Kumar](https://github.com/Adityakumar37)
